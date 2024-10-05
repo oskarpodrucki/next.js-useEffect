@@ -3,13 +3,13 @@ import Image from "next/image"
 export default function Country({country}){
 
     return(
-        <div className="flex justify-center items-center h-[33px] w-[333px] border p-4 mt-1 ml-1 border-red-500">
+        <div className="flex flex-col justify-center items-center w-[333px] border p-4 mt-1 ml-1 border-white">
             <Image
             src={country.flags.png}
-            height={20}
-            width={40}
-            sizes="(max-width: 80px) 100vw, 33vw"
+            height={200}
+            width={300}
             alt={country.name.common}
+            className="w-[300px] h-[200px]"
             />
             {country.name.common}
 
